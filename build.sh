@@ -25,5 +25,6 @@ cp $SCRIPT_PATH/bamboo/* /bamboo/
 
 # Copy start scripts
 cp $SCRIPT_PATH/scripts/start.sh /
+cp $SCRIPT_PATH/scripts/start_persist_env_vars.sh /
 cp $SCRIPT_PATH/scripts/start_bamboo_agent.sh /
 chmod +x /*.sh
