@@ -1,5 +1,3 @@
 #!/bin/bash
 
-# TODO: use environment variable for the host
-
-java -jar /bamboo/atlassian-bamboo-agent-installer-5.8.1.jar https://bamboo.taktik.be/agentServer/
+java -Dbamboo.home=$BAMBOO_HOME -jar $BAMBOO_INSTALL_DIR/atlassian-bamboo-agent-installer-$BAMBOO_SERVER_VERSION.jar $BAMBOO_SERVER_URL/agentServer/ -t $BAMBOO_SERVER_TOKEN
